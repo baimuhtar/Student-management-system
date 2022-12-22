@@ -1,6 +1,5 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -17,7 +16,13 @@
     <div class="row">
         <h1>List Students</h1>
     </div>
-    <table class="table table-dark table-striped table-bordered">
+
+    <div class="row">
+        <div class="col-lg-3">
+            <a th:href="@{/students/new}" class="btn btn-primary btn-sm mb-3"> Add Student</a>
+        </div>
+    </div>
+    <table class="table table-dark table-bordered">
         <thead class="table-dark">
         <tr>
             <th>Student First Name</th>

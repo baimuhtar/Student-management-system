@@ -28,8 +28,12 @@ public class StudentController {
         return "students";
     }
 
-    @PostMapping("/create")
-    public void createStudent(Model model, Student student) {
+    @GetMapping("/students/new")
+    public String createStudentForm(Model model) {
+        //create students object to hold student from data
+        Student student = new Student();
+        model.addAttribute("student", student);
+        return "create_student";
 
     }
 }
