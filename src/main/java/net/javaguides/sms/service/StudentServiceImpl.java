@@ -19,22 +19,13 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student getById(Long id) {
-        return null;
-    }
-
-    @Override
-    public void createStudent(Student student) {
-
-    }
-
-    @Override
-    public void deleteStudent(Long id) {
-
-    }
-
-    @Override
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
     }
+
+    @Override
+    public Student saveStudent(Student student) {
+        return studentRepository.save(student);
+    }
+
 }
