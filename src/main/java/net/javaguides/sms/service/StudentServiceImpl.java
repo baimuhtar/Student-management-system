@@ -19,25 +19,21 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    @GetMapping("/getById")
     public Student getById(Long id) {
         return null;
     }
 
     @Override
-    @PostMapping("/create")
     public void createStudent(Student student) {
 
     }
 
     @Override
-    @PostMapping("/delete")
     public void deleteStudent(Long id) {
 
     }
 
     @Override
-    @GetMapping("/allStudents")
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
     }
